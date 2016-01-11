@@ -1,0 +1,331 @@
+body{
+    font-family: "Lucida Grande", "Lucida Sans";
+}
+
+#com-jpa-system-background{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+#com-jpa-system-background-protector{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+#com-jpa-system-desktop-input{
+    display: block;
+    position: fixed;
+    top: -9999px;
+}
+
+#top-bar-container{
+    display: block;
+    height: 25px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0px 6px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 0px 6px rgba(0,0,0,0.5);
+    z-index: 9999;
+}
+
+#logo-container{
+    display: block;
+    height: 25px;
+    width: 60px;
+    position: relative;
+    top: 0;
+    left: 0;
+    float: left;
+}
+
+#logo-container img{
+    width: 18px;
+    height: 18px;
+    margin-top: 3px;
+    padding-left: 30px;
+}
+
+#apps-name-container{
+    display: block;
+    height: 25px;
+    width: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    float: left;
+    font-size: 15px;
+    line-height: 25px;
+    padding: 0;
+    z-index: 99;
+}
+
+#apps-name-container .apps-menu-name{
+    font-weight: bold;
+}
+
+#menu-container{
+    display: block;
+    height: 25px;
+    width: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#rightbar-container{
+    display: block;
+    height: 25px;
+    width: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#dock-container{
+    display: block;
+    width: 80%;
+    height: 55px;
+    position: fixed;
+    bottom: -999px;
+    left: 100px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: rgba(110, 110, 130, 0.85);
+    opacity: 0;
+    z-index: 5;
+    cursor: default;
+}
+
+.dock-item{
+    display: block;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    left: 0;
+    z-index: 9;
+    margin: 5px 5px;
+    cursor: default;
+}
+
+.dock-item img{
+    width: 100%;
+    height: 100%;
+    cursor: default;
+}
+
+.apps-menu-item{
+    font-size: 15px;
+    display: block;
+    height: 25px;
+    float: left;
+    padding: 0 0;
+    line-height: 25px;
+    cursor: default;
+}
+
+.apps-menu-name{
+    font-size: 15px;
+    display: block;
+    height: 25px;
+    float: left;
+    padding: 0 10px;
+    line-height: 25px;
+    cursor: default;
+}
+
+.apps-menu-name-active{
+    font-size: 15px;
+    display: block;
+    height: 25px;
+    float: left;
+    padding: 0 10px;
+    line-height: 25px;
+    cursor: default;
+    background: #1F6BDF;
+    color: #ffffff;
+}
+
+.apps-menu-group{
+    display: none;
+    position: absolute;
+    top: 25px;
+    background: rgba(255, 255, 255, 0.9);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0 0px 6px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+}
+
+.apps-submenu-item, .apps-submenu-item-last{
+    display: block;
+    position: relative;
+    height: 25px;
+    width: auto;
+    padding: 0 10px;
+    padding-right: 50px;
+    cursor: default;
+    color: #000;
+    white-space: pre;
+}
+
+.apps-submenu-item-last{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.apps-submenu-item:hover, .apps-submenu-item-last:hover{
+    background: #1F6BDF;
+    color: #ffffff;
+}
+
+/* Application Default */
+.com-jpa-system-apps{
+    border: 1px solid #FCf6FF;
+    border-left: 1px solid rgba(200,200,200,0.8);
+    border-right: 1px solid rgba(200,200,200,0.8);
+    border-bottom: 1px solid rgba(200,200,200,0.8);
+    border-radius: 6px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    position: fixed;
+    top: -9999px;
+    left: -9999px;
+    display: block;
+    height: 400px;
+    width: 600px;
+    padding-bottom: 1px;
+    z-index: 9;
+}
+
+.com-jpa-system-apps-group-btn{
+    display: block;
+    width: 75px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.com-jpa-system-apps-close-btn{
+    display: block;
+    height: 14px;
+    width: 14px;
+    background:url("img/close-btn.png");
+    border-radius: 18px;
+    position: absolute;
+    top: 5px;
+    left: 7px;
+    cursor: default;
+}
+
+.com-jpa-system-apps-minimize-btn{
+    display: block;
+    height: 14px;
+    width: 14px;
+    background:url("img/minimize-btn.png");
+    border-radius: 18px;
+    position: absolute;
+    top: 5px;
+    left: 30px;
+    cursor: default;
+}
+
+.com-jpa-system-apps-maximize-btn{
+    display: block;
+    height: 14px;
+    width: 14px;
+    background:url("img/maximize-btn.png");
+    border-radius: 18px;
+    position: absolute;
+    top: 5px;
+    left: 53px;
+    cursor: default;
+}
+
+.com-jpa-system-apps-minimize-btn:hover{
+    background:url("img/minimize-btn-hover.png");
+}
+
+.com-jpa-system-apps-maximize-btn:hover{
+    background:url("img/maximize-btn-hover.png");
+}
+
+.com-jpa-system-apps-close-btn:hover{
+    background:url("img/close-btn-hover.png");
+}
+
+.com-jpa-system-apps-close-unfocus-btn, .com-jpa-system-apps-maximize-unfocus-btn, .com-jpa-system-apps-minimize-unfocus-btn{
+    display: block;
+    height: 13px;
+    width: 13px;
+    background-color: #E1E1E1;
+    border-radius: 20px;
+    position: absolute;
+    top: 5px;
+    left: 7px;
+    cursor: default;
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.4);
+}
+
+.com-jpa-system-apps-maximize-unfocus-btn{
+    left: 30px;
+}
+
+.com-jpa-system-apps-minimize-unfocus-btn{
+    left: 53px;
+}
+
+.com-jpa-system-apps-close-unfocus-btn, .com-jpa-system-apps-maximize-unfocus-btn, .com-jpa-system-apps-minimize-unfocus-btn{
+    opacity: 0.8;
+}
+
+.com-jpa-system-apps-header{
+    width: 100%;
+    height: 30px;
+    display: block;
+    background: linear-gradient(#F3EEF2, #E8E8E8);
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 1px solid #B7B7B7;
+}
+
+.com-jpa-system-apps-header-custom{
+    width: 100%;
+    display: block;
+    background: linear-gradient(#F3EEF2, #E4E4E4);
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 1px solid #B7B7B7;
+}
+
+
+/* Custom Scrollbar */
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff;
+    -webkit-box-shadow: inset 0 0 6px rgba(150,150,150,0.5);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #aaa;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+}

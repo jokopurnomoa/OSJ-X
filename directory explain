@@ -1,0 +1,37 @@
+Ada beberapa direktori yang umum terdapat dalam instalasi UNIX:
+
+1. Direktori "/" (root)
+
+Direktori ini terletak pada level teratas dari struktur direktori UNIX. Biasanya direktori root ini diberi tanda / atau slash. Direktori ini biasanya hanya terdiri dari direktori-direktori lainnya yang terletak pada level dibawah level direktori root. Berkas-berkas dapat disimpan pada direktori root tetapi usahakan tidak menyimpan berkas-berkas biasa sehingga direktori ini tetap terjaga keteraturannya.
+
+Perubahan penamaan direktori-direktori yang ada pada direktori root akan menyebabkan sebagian besar dari sistem menjadi tidak berguna. Karena sebagian besar dari direktori-direktori ini berisi fungsi-fungsi yang sifatnya kritikal yang dimana sistem operasi dan semua aplikasi memerlukan direktori-direktori ini dengan nama yang sudah diberikan pada awal instalasi. Tetapi kita bisa membuat direktori lain pada level ini. Direktori home juga bisa ditemukan pada level ini hasil pembuatan oleh administrator sistem.
+
+2. Direktori "/bin"
+
+Direktori ini berisi program-program yang esensial agar sistem operasi dapat bekerja dengan benar. Dalam direktori ini dapat ditemukan perintah-perintah navigasi, program-program shell, perintah pencarian dan lain-lainnya. bin adalah singkatan dari kata binary. Di UNIX, sebuah binary adalah berkas yang dapat dieksekusi. Sebagian besar dari perintah dalam UNIX merupakan binary, perintah-perintah tersebut merupakan program-program kecil yang dapat dieksekusi oleh pengguna. Ada beberapa perintah yang disebut perintah built-in dimana fungsi mereka dikendalikan oleh program shell sehingga mereka tidak beroperasi sebagai binary yang terpisah.
+
+Terkadang direktori bin terhubung ke direktori lain yang dinamakan /usr/bin. Direktori /usr/bin biasanya adalah lokasi sebenarnya dari binary-binary pengguna disimpan.Dalam hal ini, /bin adalah gerbang untuk mencapai /usr/bin.
+
+3. Direktori "/dev"
+
+Direktori ini berisi berkas-berkas alat atau alat I/O. Sistem UNIX menganggap semua hal sebagai berkas. Hal-hal seperti monitor, CD-ROM, printer dan lain-lainnya dianggap hanya sebagai berkas saja oleh sistem operasi. Jika UNIX memerlukan perangkat-perangkat tersebut maka UNIX akan mencarinya ke direktori dev.
+
+4. Direktori "/etc"
+
+Direktori yang dibaca et-see ini berisi beberapa konfigurasi berkas pengguna dan sistem, dan berkas yang ditunjuk sistem sebagai operasi normal seperti berkas kata sandi, pesan untuk hari ini, dan lain-lainnya.
+
+5. Direktori "/lib"
+
+Direktori ini berisi pustaka-pustaka (libraries) yang dibagi (shared). Pustaka ini adalah rutin perangkat lunak (software routines) yang digunakan lebih dari satu bagian dari sistem operasi. Ketika kita menginstalasi perangkat lunak yang baru maka ada pustaka-pustaka baru yang ditambahkan ke direktori lib. Jika pada waktu berusaha menjalankan aplikasi terdapat pesan error, hal ini diakibatkan ada pustaka yang hilang dari direktori lib. Aplikasi-aplikasi di UNIX biasanya memeriksa lib ketika menginstalasi untuk memeriksa apakah pustaka-pustaka yang diperlukan oleh aplikasi sudah tersedia atau belum. Jika sudah tersedia, UNIX biasanya tidak menimpa pustaka tersebut.
+
+6. Direktori "/sbin"
+
+Direktori ini berisi binary-binary juga seperti pada direktori bin.Tetapi,bedanya adalah binary-binary pada direktori ini berhubungan dengan fungsi-fungsi sistem administrasi pada sistem operasi UNIX. Binary-binary ini bukan yang biasa digunakan oleh pengguna tetapi digunakan agar komputer dapat beroperasi secara efisien.
+
+7. Direktori "/usr"
+
+Direktori ini terdiri dari banyak direktori seperti pada direktori root. Direktori ini berisi berkas-berkas yang dapat diakses oleh para pengguna biasa. Struktur dari direktori ini mirip dengan struktur direktori "/". Beberapa direktori yang terdapat dalam direktori ini berhubungan dengan direktori yang ada di direktori /.
+
+8. Direktori "/var"
+
+Direktori ini berisi data yang bermacam-macam (vary). Perubahan data dalam sistem yang aktif sangatlah cepat. Data-data seperti ini ada dalam waktu yang singkat. Karena sifatnya yang selalu berubah tidak memungkinkan disimpan dalam direktori seperti "/etc". Oleh karena itu, data-data seperti ini disimpan di direktori var.

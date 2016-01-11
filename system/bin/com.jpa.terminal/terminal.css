@@ -1,0 +1,20 @@
+#com-jpa-terminal{
+    display: block;
+    height: 400px;
+    width: 600px;
+}
+#com-jpa-terminal-content{
+    display: block;
+    background-color: #fff;
+    color: #000;
+    font-family: Consolas;
+    font-size: 13px;
+    padding: 5px 10px;
+    overflow: auto;
+    white-space: pre;
+    outline: none;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}

@@ -1,0 +1,80 @@
+#com-jpa-browser-content{
+    background: #ffffff;
+    color: #333;
+    font-size: 14px;
+    -webkit-border-bottom-left-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+#com-jpa-browser-url{
+    position: absolute;
+    top: 7px;
+    left: 180px;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    padding-bottom: 4px;
+    border-radius: 4px;
+}
+
+#com-jpa-browser-content-iframe{
+    border: none;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#com-jpa-browser-header #com-jpa-browser-btn-prev, #com-jpa-browser-header #com-jpa-browser-btn-next{
+    display: block;
+    width: 30px;
+    height: 24px;
+    background: #ffffff;
+    position: absolute;
+    left: 90px;
+    top: 7px;
+    border-radius: 4px;
+}
+
+#com-jpa-browser-header #com-jpa-browser-btn-prev{
+    -webkit-border-top-right-radius: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#com-jpa-browser-header #com-jpa-browser-btn-next{
+    left: 121px;
+    -webkit-border-top-left-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+#com-jpa-browser-header #com-jpa-browser-btn-prev img{
+    margin-top: 5px;
+    margin-left: 10px;
+    opacity: 0.3;
+}
+
+#com-jpa-browser-header #com-jpa-browser-btn-next img{
+    margin-top: 5px;
+    margin-left: 10px;
+    opacity: 0.3;
+}
+
+#com-jpa-browser-loading{
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    right: 143px;
+    top: 12px;
+    display: none;
+}
